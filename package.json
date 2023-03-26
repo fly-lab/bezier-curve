@@ -1,0 +1,71 @@
+{
+  "version": null,
+  "name": "@fly-lab/template-lib-tsup",
+  "description": "Starting JavaScript library template with tsup.",
+  "private": true,
+  "author": "DHN Chandan",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "typings": "./dist/index.d.ts",
+  "module": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.cjs",
+      "node": "./dist/index.cjs"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist/*"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fly-lab/template-lib-tsup.git"
+  },
+  "bugs": {
+    "email": "fly.dev.org@gmail.com",
+    "url": "https://github.com/fly-lab/template-lib-tsup/issues"
+  },
+  "homepage": "https://github.com/fly-lab/template-lib-tsup.git",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "library",
+    "npm",
+    "tsup"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "pnpm build --watch",
+    "prepare": "husky install",
+    "cz": "git cz",
+    "cz:install": "commitizen init cz-conventional-changelog --yarn --dev --exact",
+    "cz:force": "commitizen init cz-conventional-changelog --yarn --dev --exact --force"
+  },
+  "devDependencies": {
+    "@fly-lab/eslint-config": "workspace:*",
+    "@fly-lab/tsconfig": "workspace:*",
+    "@swc/core": "^1.3.42",
+    "@types/node": "^18.15.9",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.0",
+    "terser": "^5.16.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

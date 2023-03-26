@@ -1,0 +1,9 @@
+{
+  "src/**/*.{js,jsx,ts,tsx,json}": [
+    "npx eslint --max-warnings=0 --fix",
+    "npx prettier --write"
+  ],
+  "src/**/*.{css,less}": [
+    "npx stylelint --fix"
+  ]
+}
