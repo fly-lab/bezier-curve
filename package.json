@@ -1,6 +1,6 @@
 {
   "version": null,
-  "name": "@fly-lab/template-lib-tsup",
+  "name": "@fly-lab/bezier-curve",
   "description": "Starting JavaScript library template with tsup.",
   "private": true,
   "author": "DHN Chandan",
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fly-lab/template-lib-tsup.git"
+    "url": "https://github.com/fly-lab/bezier-curve.git"
   },
   "bugs": {
     "email": "fly.dev.org@gmail.com",
-    "url": "https://github.com/fly-lab/template-lib-tsup/issues"
+    "url": "https://github.com/fly-lab/bezier-curve/issues"
   },
-  "homepage": "https://github.com/fly-lab/template-lib-tsup.git",
+  "homepage": "https://github.com/fly-lab/bezier-curve.git",
   "keywords": [
     "typescript",
     "javascript",
